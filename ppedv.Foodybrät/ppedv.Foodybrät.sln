@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32317.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Model", "ppedv.Foodybrät.Model\ppedv.Foodybrät.Model.csproj", "{4FAC883A-45FA-406B-9B51-1F4F731F1230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FAC883A-45FA-406B-9B51-1F4F731F1230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAC883A-45FA-406B-9B51-1F4F731F1230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAC883A-45FA-406B-9B51-1F4F731F1230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAC883A-45FA-406B-9B51-1F4F731F1230}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21B9F49F-F07B-432A-ADC0-57F8731C8DB9}
+	EndGlobalSection
+EndGlobal
