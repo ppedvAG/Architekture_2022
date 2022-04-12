@@ -24,9 +24,9 @@ namespace ppedv.Foodybrät.Data.EfCore
             _efContext.Set<T>().Remove(entity);
         }
 
-        public IEnumerable<T> GetAll<T>() where T : Entity
+        public IQueryable<T> Query<T>() where T : Entity
         {
-            return _efContext.Set<T>().ToList();
+            return _efContext.Set<T>();
         }
 
         public T GetById<T>(int id) where T : Entity

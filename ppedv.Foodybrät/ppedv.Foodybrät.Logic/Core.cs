@@ -15,12 +15,11 @@ namespace ppedv.Foodybrät.Logic
             Repository = repository;
         }
 
-        public Customer? GetCustomersWithMostyValuableOrders()
+        public Customer? GetCustomersWithMostyValuableOrder()
         {
-            return Repository.GetAll<Customer>()
-                             .OrderBy(x => x.Orders.Select(y => y.Items)
-                                                   .Sum(y => y.Sum(z => z.Amount * z.Food.Price)))
-                             .FirstOrDefault();
+            return Repository.Query<Order>()
+                             .OrderBy(x => x.Items.Sum(y => y.Food.Price * y.Amount))
+                             .FirstOrDefault().Customer;
         }
 
         public bool IsOrderVegan(Order order)

@@ -1,13 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>disable</Nullable>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ppedv.Foodybrät.Data.EfCore\ppedv.Foodybrät.Data.EfCore.csproj" />
+    <ProjectReference Include="..\ppedv.Foodybrät.Contracts\ppedv.Foodybrät.Contracts.csproj" />
+    <ProjectReference Include="..\ppedv.Foodybrät.Logic\ppedv.Foodybrät.Logic.csproj" />
     <ProjectReference Include="..\ppedv.Foodybrät.Model\ppedv.Foodybrät.Model.csproj" />
   </ItemGroup>
 
