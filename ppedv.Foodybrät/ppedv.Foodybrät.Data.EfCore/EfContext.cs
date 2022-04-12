@@ -22,5 +22,16 @@ namespace ppedv.Foodybrät.Data.EfCore
         {
             optionsBuilder.UseSqlServer(conString).UseLazyLoadingProxies();
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Food>().ToTable("Futter");
+
+            modelBuilder.Entity<Customer>().Property(x => x.Address)
+                                           .IsRequired()
+                                           .HasColumnName("Adr")
+                                           .HasMaxLength(500);
+
+        }
     }
 }
