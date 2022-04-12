@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ppedv.Foodybrät.Contracts\ppedv.Foodybrät.Contracts.csproj" />
     <ProjectReference Include="..\ppedv.Foodybrät.Model\ppedv.Foodybrät.Model.csproj" />
   </ItemGroup>
 

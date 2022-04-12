@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Data.EfCor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Data.EfCore.Tests", "ppedv.Foodybrät.Data.EfCore.Tests\ppedv.Foodybrät.Data.EfCore.Tests.csproj", "{14C4ACC3-1C79-4721-805F-D4592AE97C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Logic", "ppedv.Foodybrät.Logic\ppedv.Foodybrät.Logic.csproj", "{249EE682-A49F-4000-ADD2-AABA2C41CFFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Contracts", "ppedv.Foodybrät.Contracts\ppedv.Foodybrät.Contracts.csproj", "{87E9220E-1B7F-4650-AA92-E696792B009B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{14C4ACC3-1C79-4721-805F-D4592AE97C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14C4ACC3-1C79-4721-805F-D4592AE97C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14C4ACC3-1C79-4721-805F-D4592AE97C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{249EE682-A49F-4000-ADD2-AABA2C41CFFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{249EE682-A49F-4000-ADD2-AABA2C41CFFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{249EE682-A49F-4000-ADD2-AABA2C41CFFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{249EE682-A49F-4000-ADD2-AABA2C41CFFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87E9220E-1B7F-4650-AA92-E696792B009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87E9220E-1B7F-4650-AA92-E696792B009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87E9220E-1B7F-4650-AA92-E696792B009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87E9220E-1B7F-4650-AA92-E696792B009B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
