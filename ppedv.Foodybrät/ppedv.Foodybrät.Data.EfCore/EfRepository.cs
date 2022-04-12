@@ -43,5 +43,11 @@ namespace ppedv.Foodybrät.Data.EfCore
         {
             _efContext.Set<T>().Update(entity);
         }
+
+        public void ClearData()
+        {
+            _efContext.Database.EnsureDeleted();
+            _efContext.Database.EnsureCreated();
+        }
     }
 }

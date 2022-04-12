@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="34.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ppedv.Foodybrät.Data.EfCore\ppedv.Foodybrät.Data.EfCore.csproj" />
     <ProjectReference Include="..\ppedv.Foodybrät.Model\ppedv.Foodybrät.Model.csproj" />
   </ItemGroup>

@@ -15,6 +15,6 @@ namespace ppedv.Foodybrät.Contracts
         void Update<T>(T entity) where T : Entity;
 
         void SaveAll();
-
+        void ClearData();
     }
 }
