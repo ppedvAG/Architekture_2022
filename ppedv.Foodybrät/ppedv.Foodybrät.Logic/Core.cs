@@ -9,9 +9,6 @@ namespace ppedv.Foodybrät.Logic
     {
         public IUnitOfWork UnitOfWork { get; init; }
 
-        public Core() : this(new Data.EfCore.EfUnitOfWork())
-        { }
-
         public Core(IUnitOfWork unitOfWork)
         {
             UnitOfWork = unitOfWork;
