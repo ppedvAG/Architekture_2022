@@ -19,6 +19,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Logic.Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.API", "ppedv.Foodybrät.API\ppedv.Foodybrät.API.csproj", "{33748D06-E747-474F-8ECC-9E28725CBBDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.UI.ASP_MVC", "ppedv.Foodybrät.UI.ASP_MVC\ppedv.Foodybrät.UI.ASP_MVC.csproj", "{00214FF2-933F-4783-B2F8-671793EFD49C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00214FF2-933F-4783-B2F8-671793EFD49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00214FF2-933F-4783-B2F8-671793EFD49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00214FF2-933F-4783-B2F8-671793EFD49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00214FF2-933F-4783-B2F8-671793EFD49C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
