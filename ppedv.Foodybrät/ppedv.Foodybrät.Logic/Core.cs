@@ -7,6 +7,8 @@ namespace ppedv.Foodybrät.Logic
 {
     public class Core
     {
+        //internal IUnitOfWork UnitOfWork { get; init; }
+        //ODER
         public IUnitOfWork UnitOfWork { get; init; }
 
         public Core(IUnitOfWork unitOfWork)
@@ -54,7 +56,7 @@ namespace ppedv.Foodybrät.Logic
                 {
                     var order = ordFaker.Generate();
                     c.Orders.Add(order);
-                    for (int j = 0; j < ran.Next(1,4); j++)
+                    for (int j = 0; j < ran.Next(1, 4); j++)
                     {
                         var item = ordItemFaker.Generate();
                         order.Items.Add(item);

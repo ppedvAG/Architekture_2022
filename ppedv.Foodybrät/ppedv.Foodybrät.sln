@@ -5,17 +5,19 @@ VisualStudioVersion = 17.2.32317.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Model", "ppedv.Foodybrät.Model\ppedv.Foodybrät.Model.csproj", "{4FAC883A-45FA-406B-9B51-1F4F731F1230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Data.EfCore", "ppedv.Foodybrät.Data.EfCore\ppedv.Foodybrät.Data.EfCore.csproj", "{4F05086D-DC78-4DC6-B8BF-F0AD923E9195}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Data.EfCore", "ppedv.Foodybrät.Data.EfCore\ppedv.Foodybrät.Data.EfCore.csproj", "{4F05086D-DC78-4DC6-B8BF-F0AD923E9195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Data.EfCore.Tests", "ppedv.Foodybrät.Data.EfCore.Tests\ppedv.Foodybrät.Data.EfCore.Tests.csproj", "{14C4ACC3-1C79-4721-805F-D4592AE97C59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Data.EfCore.Tests", "ppedv.Foodybrät.Data.EfCore.Tests\ppedv.Foodybrät.Data.EfCore.Tests.csproj", "{14C4ACC3-1C79-4721-805F-D4592AE97C59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Logic", "ppedv.Foodybrät.Logic\ppedv.Foodybrät.Logic.csproj", "{249EE682-A49F-4000-ADD2-AABA2C41CFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Logic", "ppedv.Foodybrät.Logic\ppedv.Foodybrät.Logic.csproj", "{249EE682-A49F-4000-ADD2-AABA2C41CFFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Contracts", "ppedv.Foodybrät.Contracts\ppedv.Foodybrät.Contracts.csproj", "{87E9220E-1B7F-4650-AA92-E696792B009B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Contracts", "ppedv.Foodybrät.Contracts\ppedv.Foodybrät.Contracts.csproj", "{87E9220E-1B7F-4650-AA92-E696792B009B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.UI.TestConsole", "ppedv.Foodybrät.UI.TestConsole\ppedv.Foodybrät.UI.TestConsole.csproj", "{6ABDE2B7-8B88-4DDB-BDCB-9CFDDA603CD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.UI.TestConsole", "ppedv.Foodybrät.UI.TestConsole\ppedv.Foodybrät.UI.TestConsole.csproj", "{6ABDE2B7-8B88-4DDB-BDCB-9CFDDA603CD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.Logic.Tests", "ppedv.Foodybrät.Logic.Tests\ppedv.Foodybrät.Logic.Tests.csproj", "{B1101D97-E22F-4DF2-ACDE-F26AFA39D3A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ppedv.Foodybrät.Logic.Tests", "ppedv.Foodybrät.Logic.Tests\ppedv.Foodybrät.Logic.Tests.csproj", "{B1101D97-E22F-4DF2-ACDE-F26AFA39D3A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.Foodybrät.API", "ppedv.Foodybrät.API\ppedv.Foodybrät.API.csproj", "{33748D06-E747-474F-8ECC-9E28725CBBDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{B1101D97-E22F-4DF2-ACDE-F26AFA39D3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1101D97-E22F-4DF2-ACDE-F26AFA39D3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1101D97-E22F-4DF2-ACDE-F26AFA39D3A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33748D06-E747-474F-8ECC-9E28725CBBDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
