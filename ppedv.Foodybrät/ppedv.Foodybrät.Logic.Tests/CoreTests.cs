@@ -12,7 +12,7 @@ namespace ppedv.Foodybrät.Logic.Tests
         [TestMethod]
         public void GetCustomersWithMostyValuableOrder_Fred_has_most_expensive_order_TESTREPO()
         {
-            var core = new Core(new TestRepo());
+            var core = new Core(new TestUnitOfWork());
 
             var result = core.GetCustomersWithMostyValuableOrder();
 
@@ -22,8 +22,8 @@ namespace ppedv.Foodybrät.Logic.Tests
         [TestMethod]
         public void GetCustomersWithMostyValuableOrder_Fred_has_most_expensive_order()
         {
-            var mock = new Mock<IRepository>();
-            mock.Setup(x => x.Query<Order>()).Returns(() =>
+            var mock = new Mock<IUnitOfWork>();
+            mock.Setup(x => x.GetRepo<Order>().Query()).Returns(() =>
             {
                 var c1 = new Customer() { Name = "Wilma" };
                 var order1 = new Order();

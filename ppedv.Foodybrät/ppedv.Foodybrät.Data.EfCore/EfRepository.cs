@@ -1,16 +1,20 @@
 ﻿using ppedv.Foodybrät.Contracts;
 using ppedv.Foodybrät.Model;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace ppedv.Foodybrät.Data.EfCore
 {
-    public class EfRepository : IRepository
+
+    public class EfRepository<T> : IRepository<T> where T : Entity
     {
+        protected readonly EfContext _efContext;
 
-        EfContext _efContext = new EfContext();
+        public EfRepository(EfContext efContext)
+        {
+            _efContext = efContext;
+        }
 
-        public void Add<T>(T entity) where T : Entity
+        public void Add(T entity)
         {
             //if (typeof(T) == typeof(Food))
             //    _efContext.Food.Add(entity as Food);
@@ -19,35 +23,23 @@ namespace ppedv.Foodybrät.Data.EfCore
             //_efContext.Add(entity);
         }
 
-        public void Delete<T>(T entity) where T : Entity
+        public void Delete(T entity)
         {
             _efContext.Set<T>().Remove(entity);
         }
 
-        public IQueryable<T> Query<T>() where T : Entity
+        public IQueryable<T> Query()
         {
             return _efContext.Set<T>();
         }
 
-        public T GetById<T>(int id) where T : Entity
+        public T GetById(int id)
         {
             return _efContext.Set<T>().Find(id);
         }
-
-        public void SaveAll()
-        {
-            _efContext.SaveChanges();
-        }
-
-        public void Update<T>(T entity) where T : Entity
+        public void Update(T entity)
         {
             _efContext.Set<T>().Update(entity);
-        }
-
-        public void ClearData()
-        {
-            _efContext.Database.EnsureDeleted();
-            _efContext.Database.EnsureCreated();
         }
     }
 }

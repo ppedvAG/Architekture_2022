@@ -7,20 +7,20 @@ namespace ppedv.Foodybrät.Logic
 {
     public class Core
     {
-        public IRepository Repository { get; init; }
+        public IUnitOfWork UnitOfWork { get; init; }
 
-        public Core() : this(new Data.EfCore.EfRepository())
+        public Core() : this(new Data.EfCore.EfUnitOfWork())
         { }
 
-        public Core(IRepository repository)
+        public Core(IUnitOfWork unitOfWork)
         {
-            Repository = repository;
+            UnitOfWork = unitOfWork;
         }
 
 
         public void ClearAllDataAndFillWithDemoData()
         {
-            Repository.ClearData();
+            UnitOfWork.ClearData();
 
             int seed = 4;
             var ran = new Random(seed);
@@ -42,7 +42,7 @@ namespace ppedv.Foodybrät.Logic
             foodFaker.RuleFor(x => x.Vegetarian, x => x.Random.Bool());
             foodFaker.RuleFor(x => x.Vegan, x => x.Random.Bool());
             var foods = foodFaker.Generate(20);
-            foods.ForEach(x => Repository.Add(x));
+            foods.ForEach(x => UnitOfWork.FoodRepository.Add(x));
 
             var ordItemFaker = new Faker<OrderItem>("de");
             ordItemFaker.UseSeed(4);
@@ -51,7 +51,7 @@ namespace ppedv.Foodybrät.Logic
 
             foreach (var c in custFaker.Generate(100))
             {
-                Repository.Add(c);
+                UnitOfWork.CustomerRepository.Add(c);
 
                 for (int i = 0; i < ran.Next(1, 5); i++)
                 {
@@ -64,14 +64,14 @@ namespace ppedv.Foodybrät.Logic
                     }
                 }
             }
-            Repository.SaveAll();
+            UnitOfWork.SaveAll();
         }
 
 
 
         public Customer? GetCustomersWithMostyValuableOrder()
         {
-            return Repository.Query<Order>()
+            return UnitOfWork.GetRepo<Order>().Query()
                              .OrderByDescending(x => x.Items.Sum(y => y.Food.Price * y.Amount))
                              .FirstOrDefault().Customer;
         }

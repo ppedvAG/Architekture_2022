@@ -4,9 +4,11 @@ using ppedv.Foodybrät.Model;
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.WriteLine("*** Foodybrät 7000 v1.0 ***");
 
+//DI 
+
 var core = new Core();
 //core.ClearAllDataAndFillWithDemoData();
-foreach (var c in core.Repository.Query<Customer>().ToList())
+foreach (var c in core.UnitOfWork.CustomerRepository.Query().ToList())
 {
     Console.WriteLine($"{c.Name} {c.Address} {c.Phone}");
     foreach (var ord in c.Orders.ToList())
